@@ -34,7 +34,7 @@ export default function AppShell({ children }: { children: React.ReactNode }) {
                 className="object-contain rounded"
               />
               <span className="text-lg font-semibold text-slate-800 dark:text-slate-200">
-                SMV Highschool
+                SMV school Dwarka
               </span>
             </Link>
           </div>
