@@ -3,8 +3,6 @@ import { GeistSans } from "geist/font/sans";
 import { GeistMono } from "geist/font/mono";
 import "./globals.css";
 import { Toaster } from "react-hot-toast";
-import { AuthProvider } from "./pages/auth/AuthContext";
-import { AppShell } from "./pages/Sidebar";
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,10 +21,8 @@ export default function RootLayout({
         className={`${GeistSans.variable} ${GeistMono.variable} antialiased flex flex-col min-h-screen`}
         // --- END FIX ---
       >
-        <AuthProvider>
-          <Toaster />
-          <AppShell>{children}</AppShell>
-        </AuthProvider>
+        <Toaster />
+        {children}
       </body>
     </html>
   );
